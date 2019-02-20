@@ -1,6 +1,22 @@
 const request = require("request");
 const fs = require("fs");
 const path = require("path")
+const yargs = require("yargs");
+
+const argv = yargs
+  .options({
+    a: {
+      demand: true,
+      alias: "address",
+      describe: "Address for which to fetch the weather",
+      string: true
+    }
+  })
+  .help()
+  .alias("help", "h")
+  .argv;
+
+console.log(argv);
 
 /*
 My API key and location are in a file in the parent directory so that they are
