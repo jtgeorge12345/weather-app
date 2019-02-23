@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jtgeorge12345/weather-app#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "request": "^2.88.0",
     "yargs": "^13.2.1"
   }
